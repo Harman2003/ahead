@@ -2,7 +2,7 @@ import React from 'react'
 
 const Career = () => {
   return (
-    <div className='bg-violet-500'>
+    <div className='section bg-brown-900'>
       Career section
     </div>
   )

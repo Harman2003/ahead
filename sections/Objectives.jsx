@@ -2,7 +2,7 @@ import React from 'react'
 
 const Objectives = () => {
   return (
-    <div className='bg-blue-500'>
+    <div className='section bg-blue-500'>
       Objectives section
     </div>
   )

@@ -1,7 +1,7 @@
 'use client';
 
 const About = () => (
-  <section>
+  <section className="section">
     About section
   </section>
 );
