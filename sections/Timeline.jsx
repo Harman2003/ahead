@@ -8,25 +8,25 @@ import {
   TimelineBody,
   Typography,
 } from "@material-tailwind/react";
-
-import { useMotionValueEvent, useScroll } from "framer-motion";
-import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import { timelineData } from "../constants";
+import { appearingText } from "../utils/motion";
 const Page = () => {
-  const ref = useRef(null);
-  const { scrollY } = useScroll({ container: ref });
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest);
-  });
 
-  // console.log(scrollY);
   return (
     <div className="section grid grid-rows-[25%,75%]">
-      <div className="flex flex-col justify-center gap-3 px-20">
+      <motion.div
+        className="flex flex-col justify-center gap-3 px-20"
+        variants={appearingText}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <div>Wrong with self-improvement & how we're fixing it</div>
         <div className="text-4xl font-bold">Self Improvements. Ugh</div>
-      </div>
-      <div ref={ref} className="overflow-y-scroll">
+      </motion.div>
+      <div className="overflow-scroll">
         <Timeline className="flex items-center">
           <div className="w-1/2">
             {timelineData.map((item, index) => (

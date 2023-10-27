@@ -6,10 +6,12 @@ import Card from "../components/Card";
 import { cardData } from "../constants";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { appearingText } from "../utils/motion";
 const CardSection = () => {
   const ref = useRef(null);
   const dummyref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  
   useEffect(() => {
     if (isInView) {
       console.log("came");
@@ -18,7 +20,6 @@ const CardSection = () => {
       ref.current?.scrollBy({ left: count, behaviour: "smooth" });
     }
   }, [isInView]);
-  console.log(isInView);
   return (
     <div className="section grid grid-rows-[40%,60%]">
       <div className="grid grid-cols-[40%,25%,25%] justify-between w-full mt-6 px-20">
@@ -27,9 +28,15 @@ const CardSection = () => {
         <div className="flex-1 text-gray-600 font-medium">{text2}</div>
       </div>
       <div>
-        <div className=" font-bold text-4xl pl-20">
+        <motion.div
+          variants={appearingText}
+          className=" font-bold text-4xl pl-20"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           Does this sound familiar...
-        </div>
+        </motion.div>
         <motion.div
           ref={ref}
           // initial={{ opacity: 0 }}

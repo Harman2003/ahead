@@ -126,3 +126,60 @@ export const timelineData = [
     text: "You've experienced a night of uninterrupted and restful sleep, waking up feeling completely refreshed and energized. It's as if your body and mind have been reset during the night, and you face the new day with a renewed sense of well-being. As you go about your morning routine, you can't help but notice the clarity of your mind and the abundance of energy you have. The world seems brighter, and challenges feel more manageable. A good night's sleep is a testament to the importance of self-care and its profound impact on your overall outlook. Your positive start to the day sets the stage for success and fulfillment.",
   },
 ];
+
+export const careerData = [
+  {
+    head: 'Senior Full-Stack Engineer',
+    data: ['Full-time position', 'Berlin or remote', '$65k, 0.5-1.5% equity share options']
+    
+  },
+  {
+    head: 'Senior Designer',
+    data: ['Full-time position', 'Berlin or remote', '$40k, 0.5-1.5% equity share options']
+
+  },
+  {
+    head: 'Superstar Intern',
+    data: ['Full-time position', 'Berlin or remote', '$25k, 0.5-1.5% equity share options']
+
+  },
+]
+
+export const objectiveData = [
+  {
+    head: "A Joyous Gathering on a Special Occasion with Loved Ones",
+    text: "Celebrate milestones with laughter and cherished memories; strengthen bonds on important days.",
+  },
+  {
+    head: "Basking in the Radiant Sunshine, an Energetic Day Unfolds",
+    text: "Embrace the warmth of the sun, recharge outdoors, and infuse your day with newfound energy.",
+  },
+  {
+    head: "The Closing Chapter of an Inspiring Book Leaves Its Mark",
+    text: "Reflections on a book's wisdom inspire personal growth; it becomes part of your own story.",
+  },
+  {
+    head: "Achieving Fitness Milestones through Dedication and Strength",
+    text: "After months of hard work, you feel stronger, healthier, and more confident; overcome fitness challenges.",
+  },
+  {
+    head: "Cultivating the Garden: A Journey of Nature's Beauty",
+    text: "Planting and nurturing a garden fosters a deep connection with nature; yield satisfaction from growth.",
+  },
+  {
+    head: "Expressing Creativity on Canvas: Artwork from the Heart",
+    text: "Crafting artwork, every stroke is an expression of your imagination; a testament to creative expression.",
+  },
+  {
+    head: "An Invigorating Bike Ride: Exploring the World's Beauty",
+    text: "Pedaling through scenic routes renews your zest for life; exploring nature's gems brings adventure.",
+  },
+  {
+    head: "Culinary Excellence: Mastering the Art of Gourmet Cooking",
+    text: "Crafting gourmet meals showcases your culinary prowess, blending flavors and presentation with perfection.",
+  },
+  {
+    head: "A Night of Blissful Sleep: Rejuvenation and Clarity",
+    text: "Uninterrupted sleep rejuvenates you, filling the day with clarity and energy, ready for success.",
+  },
+];

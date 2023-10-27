@@ -11,7 +11,7 @@ const Card = ({ item }) => {
         transform:  istilt?"rotate(-5deg)":"" ,
       }}
     >
-      <div>{icon}</div>
+      <div className="text-2xl">{icon}</div>
       <div className="text-lg font-bold">{head}</div>
       <div>{text}</div>
     </div>

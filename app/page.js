@@ -1,5 +1,5 @@
 import { Footer, Navbar } from '../components';
-import { About, Timeline, Insights, GetStarted, Hero, CardSection, Objectives, Career } from '../sections';
+import { About, Timeline, Insights, GetStarted, Hero, CardSection, Objectives } from '../sections';
 
 const Page = () => (
   <div className='snap-y snap-mandatory overflow-y-scroll h-screen'>
@@ -11,7 +11,6 @@ const Page = () => (
     <Insights />
     <GetStarted />
     <Objectives />
-    <Career />
     <Footer />
   </div>
 );
