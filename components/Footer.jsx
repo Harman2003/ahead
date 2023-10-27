@@ -5,15 +5,20 @@ import { MdEmail as EmailIcon } from "react-icons/md";
 import { Button } from "@material-tailwind/react";
 import { careerData } from "../constants";
 import CareerCard from "./CareerCard";
+import Image from "next/image";
 const Footer = () => (
   <div className="section grid grid-rows-[10%,55%,35%]">
     <div className="text-4xl font-bold mx-20">Open Vacancies</div>
     <div className="h-full w-full flex justify-center gap-8 py-20">
-      {careerData.map((item, index) => <CareerCard key={index} item={item} />)}
+      {careerData.map((item, index) => (
+        <CareerCard key={index} item={item} />
+      ))}
     </div>
     <div className="flex flex-col items-center gap-10">
       <hr className="w-full border-[1px] " />
-      <div>Logo</div>
+      <div className="w-[50px]">
+        <Image src="/aheadLogo.png" width={100} height={100} />
+      </div>
       <div className="flex gap-10">
         <div className="flex items-center gap-2">
           <LocationIcon size={24} />
