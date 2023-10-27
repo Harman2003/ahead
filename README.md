@@ -1,8 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+This project is a landing page made using [this webdesign](https://dribbble.com/shots/19807069-Ahead-app-redesign-concept). Technologies used in this application are: NextJs, TailwindCSS, Framer
 ## Getting Started
 
-First, run the development server:
+First, install all the dependencies:
+```bash
+npm install
+```
+Then, run the development server:
 
 ```bash
 npm run dev
